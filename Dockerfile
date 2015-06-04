@@ -19,7 +19,7 @@ ENV S3_BUCKET_NAME false
 ENV REDISTOGO_URL false
 ENV REDISCLOUD_URL false
 ENV REDISGREEN_URL false
-ENV REDIS_URL  false
+ENV REDIS_URL  redis://192.168.220.233:6379
 RUN git clone https://github.com/earlyclaim/prerender-with-redis.git /prerender
 RUN cd /prerender; npm install
 
